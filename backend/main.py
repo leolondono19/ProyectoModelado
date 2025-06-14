@@ -47,7 +47,7 @@ def create_population(size):
     population = []
     attempts = 0
     while len(population) < size:
-        lat = random.uniform(-60, 60)
+        lat = random.uniform(-90, 90)
         lon = random.uniform(-180, 180)
         if is_on_land(lat, lon):
             population.append({"id": len(population), "lat": lat, "lon": lon, "state": "S"})

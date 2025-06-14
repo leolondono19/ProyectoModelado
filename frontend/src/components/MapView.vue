@@ -66,7 +66,7 @@ watch(() => props.population, (newPopulation) => {
 
 <style scoped>
 #map {
-  width: 200%;
+  width: 100%;
   height: 500px;
   border-radius: 8px;
   border: 1px solid #ccc;
