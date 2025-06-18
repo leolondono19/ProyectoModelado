@@ -5,6 +5,8 @@ from typing import Optional
 import random
 import geopandas as gpd
 from shapely.geometry import Point
+import reverse_geocoder as rg
+from collections import defaultdict
 
 app = FastAPI()
 
@@ -31,6 +33,13 @@ def is_on_land(lat, lon):
     point = Point(lon, lat)
     return land_gdf.contains(point).any()
 
+def get_country(lat, lon):
+    try:
+        result = rg.search((lat, lon), mode=1)
+        return result[0]['cc']
+    except:
+        return "Unknown"
+
 class SimulationParams(BaseModel):
     population_size: int
     infection_rate: float
@@ -50,7 +59,13 @@ def create_population(size):
         lat = random.uniform(-90, 90)
         lon = random.uniform(-180, 180)
         if is_on_land(lat, lon):
-            population.append({"id": len(population), "lat": lat, "lon": lon, "state": "S"})
+            population.append({
+                "id": len(population),
+                "lat": lat,
+                "lon": lon,
+                "state": "S",
+                "country": get_country(lat, lon)
+            })
         else:
             attempts += 1
             if attempts > size * 10:
@@ -82,7 +97,6 @@ def advance_tick():
     pop = simulation_state["population"]
     new_pop = [p.copy() for p in pop]
 
-    # Infectar aleatoriamente a una persona en el primer tick
     if simulation_state["tick"] == 0:
         candidate = random.choice(new_pop)
         candidate["state"] = "I"
@@ -101,7 +115,11 @@ def advance_tick():
     simulation_state["tick"] += 1
     simulation_state["running"] = any(p["state"] == "I" for p in new_pop)
 
-    return {"tick": simulation_state["tick"], "population": simulation_state["population"], "running": simulation_state["running"]}
+    return {
+        "tick": simulation_state["tick"],
+        "population": simulation_state["population"],
+        "running": simulation_state["running"]
+    }
 
 @app.get("/simulate/tick")
 def get_simulation_data():
@@ -114,3 +132,29 @@ def get_simulation_data():
         }
         for p in simulation_state["population"]
     ]
+
+@app.get("/report")
+def get_country_report():
+    report = defaultdict(lambda: {
+        "infectados": 0,
+        "muertes": 0,
+        "vacunados": 0,
+        "centros_medicos": 0,
+        "incidencia": 0,
+        "total": 0,
+    })
+
+    for person in simulation_state["population"]:
+        country = person.get("country", "Unknown")
+        report[country]["total"] += 1
+        if person["state"] == "I":
+            report[country]["infectados"] += 1
+        if person["state"] == "R" and random.random() < 0.1:
+            report[country]["muertes"] += 1
+
+    for data in report.values():
+        data["vacunados"] = random.randint(0, data["total"])
+        data["centros_medicos"] = random.randint(0, 20)
+        data["incidencia"] = round((data["infectados"] / data["total"]) * 100, 2) if data["total"] > 0 else 0
+
+    return dict(report)
