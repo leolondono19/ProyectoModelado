@@ -7,7 +7,20 @@
 
 <script setup>
 import { onMounted, ref, watch } from 'vue';
+import axios from 'axios';
 import L from 'leaflet';
+
+const countries = ref({});
+
+onMounted(async () => {
+  try {
+    const res = await axios.get('http://127.0.0.1:8000/countries-data');
+    countries.value = res.data;
+    console.log("Countries loaded:", countries.value);
+  } catch (error) {
+    console.error("Error loading countries data:", error);
+  }
+});
 
 const props = defineProps({
   population: {
@@ -32,7 +45,7 @@ onMounted(() => {
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors',
-    noWrap: true, // Esto evita la repetición horizontal (wrapping)
+    noWrap: true,
     bounds: [
       [-90, -180],
       [90, 180]
@@ -41,13 +54,11 @@ onMounted(() => {
 });
 
 watch(() => props.population, (newPopulation) => {
-  // limpiar marcadores anteriores
   markers.value.forEach(marker => map.value.removeLayer(marker));
   markers.value = [];
 
-  // agregar nuevos marcadores
   newPopulation.forEach(person => {
-    let color = 'gray'; // recovered por defecto
+    let color = 'gray';
     if (person.state === 'I' || person.state === 'infected') color = 'red';
     else if (person.state === 'S' || person.state === 'susceptible') color = 'green';
 

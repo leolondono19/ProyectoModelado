@@ -1,0 +1,1466 @@
+{
+  "AW": {
+    "name": "Aruba",
+    "population": 107359,
+    "hospital_capacity": 268,
+    "gdp": 3648573136
+  },
+  "AF": {
+    "name": "Afghanistan",
+    "population": 41454761,
+    "hospital_capacity": 14923,
+    "gdp": 17233051620
+  },
+  "AO": {
+    "name": "Angola",
+    "population": 36749906,
+    "hospital_capacity": 27562,
+    "gdp": 84824654481
+  },
+  "AI": {
+    "name": "Anguilla",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "AX": {
+    "name": "Åland Islands",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "AL": {
+    "name": "Albania",
+    "population": 2745972,
+    "hospital_capacity": 7990,
+    "gdp": 23547179830
+  },
+  "AD": {
+    "name": "Andorra",
+    "population": 80856,
+    "hospital_capacity": 202,
+    "gdp": 3785067331
+  },
+  "AE": {
+    "name": "Emiratos Árabes Unidos",
+    "population": 10483751,
+    "hospital_capacity": 20757,
+    "gdp": 514130432653
+  },
+  "AR": {
+    "name": "Argentina",
+    "population": 45538401,
+    "hospital_capacity": 152098,
+    "gdp": 646075277525
+  },
+  "AM": {
+    "name": "Armenia",
+    "population": 2990900,
+    "hospital_capacity": 13728,
+    "gdp": 24085749592
+  },
+  "AS": {
+    "name": "American Samoa",
+    "population": 47521,
+    "hospital_capacity": 118,
+    "gdp": 871000000
+  },
+  "AG": {
+    "name": "Antigua and Barbuda",
+    "population": 93316,
+    "hospital_capacity": 307,
+    "gdp": 2033085185
+  },
+  "AU": {
+    "name": "Australia",
+    "population": 26658948,
+    "hospital_capacity": 102370,
+    "gdp": 1728057316695
+  },
+  "AT": {
+    "name": "Austria",
+    "population": 9131761,
+    "hospital_capacity": 64470,
+    "gdp": 511685203845
+  },
+  "AZ": {
+    "name": "Azerbaijan",
+    "population": 10153958,
+    "hospital_capacity": 39600,
+    "gdp": 72356176470
+  },
+  "BI": {
+    "name": "Burundi",
+    "population": 13689450,
+    "hospital_capacity": 9719,
+    "gdp": 2642161668
+  },
+  "BE": {
+    "name": "Bélgica",
+    "population": 11787423,
+    "hospital_capacity": 64595,
+    "gdp": 644782756682
+  },
+  "BJ": {
+    "name": "Benin",
+    "population": 14111034,
+    "hospital_capacity": 6349,
+    "gdp": 19676049075
+  },
+  "BQ": {
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "BF": {
+    "name": "Burkina Faso",
+    "population": 23025776,
+    "hospital_capacity": 4605,
+    "gdp": 20324617844
+  },
+  "BD": {
+    "name": "Bangladés",
+    "population": 171466990,
+    "hospital_capacity": 150890,
+    "gdp": 437415331040
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "population": 6446596,
+    "hospital_capacity": 50090,
+    "gdp": 102407653020
+  },
+  "BH": {
+    "name": "Bahrain",
+    "population": 1577059,
+    "hospital_capacity": 2744,
+    "gdp": 46079867021
+  },
+  "BS": {
+    "name": "Bahamas",
+    "population": 399440,
+    "hospital_capacity": 1070,
+    "gdp": 14338500000
+  },
+  "BA": {
+    "name": "Bosnia and Herzegovina",
+    "population": 3185073,
+    "hospital_capacity": 7453,
+    "gdp": 27514782476
+  },
+  "BL": {
+    "name": "Saint Barthélemy",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "BY": {
+    "name": "Belarus",
+    "population": 9178298,
+    "hospital_capacity": 88937,
+    "gdp": 71857382745
+  },
+  "BZ": {
+    "name": "Belize",
+    "population": 411106,
+    "hospital_capacity": 423,
+    "gdp": 3066850000
+  },
+  "BM": {
+    "name": "Bermuda",
+    "population": 64698,
+    "hospital_capacity": 407,
+    "gdp": 8141700000
+  },
+  "BO": {
+    "name": "Bolivia",
+    "population": 12244159,
+    "hospital_capacity": 16529,
+    "gdp": 45135398008
+  },
+  "BR": {
+    "name": "Brasil",
+    "population": 211140729,
+    "hospital_capacity": 519406,
+    "gdp": 2173665655937
+  },
+  "BB": {
+    "name": "Barbados",
+    "population": 282336,
+    "hospital_capacity": 1598,
+    "gdp": 6720733200
+  },
+  "BN": {
+    "name": "Brunei Darussalam",
+    "population": 458949,
+    "hospital_capacity": 1776,
+    "gdp": 15128292980
+  },
+  "BT": {
+    "name": "Bhutan",
+    "population": 786385,
+    "hospital_capacity": 1730,
+    "gdp": 2898227743
+  },
+  "BW": {
+    "name": "Botswana",
+    "population": 2480244,
+    "hospital_capacity": 5506,
+    "gdp": 19396084498
+  },
+  "CF": {
+    "name": "Central African Republic",
+    "population": 5152421,
+    "hospital_capacity": 5152,
+    "gdp": 2555492085
+  },
+  "CA": {
+    "name": "Canadá",
+    "population": 40097761,
+    "hospital_capacity": 102650,
+    "gdp": 2142470914401
+  },
+  "CC": {
+    "name": "Cocos (Keeling) Islands",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "CH": {
+    "name": "Suiza",
+    "population": 8888093,
+    "hospital_capacity": 39463,
+    "gdp": 884940402230
+  },
+  "CL": {
+    "name": "Chile",
+    "population": 19658835,
+    "hospital_capacity": 38727,
+    "gdp": 335533331669
+  },
+  "CN": {
+    "name": "China",
+    "population": 1410710000,
+    "hospital_capacity": 7053550,
+    "gdp": 17794783039552
+  },
+  "CI": {
+    "name": "Côte d'Ivoire",
+    "population": 31165654,
+    "hospital_capacity": 12466,
+    "gdp": 78875489245
+  },
+  "CM": {
+    "name": "Cameroon",
+    "population": 28372687,
+    "hospital_capacity": 75187,
+    "gdp": 49279410982
+  },
+  "CD": {
+    "name": "Congo, The Democratic Republic of the",
+    "population": 105789731,
+    "hospital_capacity": 84631,
+    "gdp": 66383287002
+  },
+  "CG": {
+    "name": "Congo",
+    "population": 6182885,
+    "hospital_capacity": 9892,
+    "gdp": 15321055822
+  },
+  "CK": {
+    "name": "Cook Islands",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "CO": {
+    "name": "Colombia",
+    "population": 52321152,
+    "hospital_capacity": 88422,
+    "gdp": 363493841244
+  },
+  "KM": {
+    "name": "Comoros",
+    "population": 850387,
+    "hospital_capacity": 1836,
+    "gdp": 1352380971
+  },
+  "CV": {
+    "name": "Cabo Verde",
+    "population": 522331,
+    "hospital_capacity": 1028,
+    "gdp": 2533819406
+  },
+  "CR": {
+    "name": "Costa Rica",
+    "population": 5105525,
+    "hospital_capacity": 6024,
+    "gdp": 86497941439
+  },
+  "CU": {
+    "name": "Cuba",
+    "population": 11019931,
+    "hospital_capacity": 46504,
+    "gdp": 107351800000
+  },
+  "CW": {
+    "name": "Curaçao",
+    "population": 147862,
+    "hospital_capacity": 369,
+    "gdp": 3281419347
+  },
+  "CX": {
+    "name": "Christmas Island",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "KY": {
+    "name": "Cayman Islands",
+    "population": 73038,
+    "hospital_capacity": 219,
+    "gdp": 7139428557
+  },
+  "CY": {
+    "name": "Cyprus",
+    "population": 1344976,
+    "hospital_capacity": 3012,
+    "gdp": 33886930712
+  },
+  "CZ": {
+    "name": "Chequia",
+    "population": 10864042,
+    "hospital_capacity": 71702,
+    "gdp": 343207874553
+  },
+  "DE": {
+    "name": "Alemania",
+    "population": 83280000,
+    "hospital_capacity": 649584,
+    "gdp": 4525703903627
+  },
+  "DJ": {
+    "name": "Djibouti",
+    "population": 1152944,
+    "hospital_capacity": 1637,
+    "gdp": 4098530513
+  },
+  "DM": {
+    "name": "Dominica",
+    "population": 66510,
+    "hospital_capacity": 198,
+    "gdp": 653992592
+  },
+  "DK": {
+    "name": "Dinamarca",
+    "population": 5946952,
+    "hospital_capacity": 14926,
+    "gdp": 407091920305
+  },
+  "DO": {
+    "name": "Dominican Republic",
+    "population": 11331265,
+    "hospital_capacity": 16090,
+    "gdp": 121444279313
+  },
+  "DZ": {
+    "name": "Argelia",
+    "population": 46164219,
+    "hospital_capacity": 75247,
+    "gdp": 247626161016
+  },
+  "EC": {
+    "name": "Ecuador",
+    "population": 17980083,
+    "hospital_capacity": 23374,
+    "gdp": 118844826000
+  },
+  "EG": {
+    "name": "Egipto",
+    "population": 114535772,
+    "hospital_capacity": 129425,
+    "gdp": 396002496996
+  },
+  "ER": {
+    "name": "Eritrea",
+    "population": 3470390,
+    "hospital_capacity": 3470,
+    "gdp": 2065001626
+  },
+  "EH": {
+    "name": "Western Sahara",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "ES": {
+    "name": "España",
+    "population": 48347910,
+    "hospital_capacity": 142142,
+    "gdp": 1620090734956
+  },
+  "EE": {
+    "name": "Estonia",
+    "population": 1370286,
+    "hospital_capacity": 6111,
+    "gdp": 41291245222
+  },
+  "ET": {
+    "name": "Etiopía",
+    "population": 128691692,
+    "hospital_capacity": 42468,
+    "gdp": 163697927593
+  },
+  "FI": {
+    "name": "Finlandia",
+    "population": 5583911,
+    "hospital_capacity": 15802,
+    "gdp": 295532341254
+  },
+  "FJ": {
+    "name": "Fiji",
+    "population": 924145,
+    "hospital_capacity": 1746,
+    "gdp": 5442046565
+  },
+  "FK": {
+    "name": "Falkland Islands (Malvinas)",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "FR": {
+    "name": "Francia",
+    "population": 68287487,
+    "hospital_capacity": 409724,
+    "gdp": 3051831611384
+  },
+  "FO": {
+    "name": "Faroe Islands",
+    "population": 54482,
+    "hospital_capacity": 136,
+    "gdp": 3907323961
+  },
+  "FM": {
+    "name": "Micronesia, Federated States of",
+    "population": 112630,
+    "hospital_capacity": 363,
+    "gdp": 460000000
+  },
+  "GA": {
+    "name": "Gabon",
+    "population": 2484789,
+    "hospital_capacity": 4870,
+    "gdp": 19388402541
+  },
+  "GB": {
+    "name": "Reino Unido",
+    "population": 68350000,
+    "hospital_capacity": 160622,
+    "gdp": 3380854520809
+  },
+  "GE": {
+    "name": "Georgia",
+    "population": 3715483,
+    "hospital_capacity": 18354,
+    "gdp": 30777833585
+  },
+  "GG": {
+    "name": "Guernsey",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "GH": {
+    "name": "Ghana",
+    "population": 33787914,
+    "hospital_capacity": 23313,
+    "gdp": 76370396722
+  },
+  "GI": {
+    "name": "Gibraltar",
+    "population": 38471,
+    "hospital_capacity": 96,
+    "gdp": 1000000000
+  },
+  "GN": {
+    "name": "Guinea",
+    "population": 14405468,
+    "hospital_capacity": 4321,
+    "gdp": 22199409741
+  },
+  "GP": {
+    "name": "Guadeloupe",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "GM": {
+    "name": "Gambia",
+    "population": 2697845,
+    "hospital_capacity": 3102,
+    "gdp": 2396111021
+  },
+  "GW": {
+    "name": "Guinea-Bissau",
+    "population": 2153339,
+    "hospital_capacity": 2153,
+    "gdp": 2048348108
+  },
+  "GQ": {
+    "name": "Equatorial Guinea",
+    "population": 1847549,
+    "hospital_capacity": 3879,
+    "gdp": 12337550583
+  },
+  "GR": {
+    "name": "Grecia",
+    "population": 10405588,
+    "hospital_capacity": 44119,
+    "gdp": 243498333237
+  },
+  "GD": {
+    "name": "Grenada",
+    "population": 117081,
+    "hospital_capacity": 372,
+    "gdp": 1316733333
+  },
+  "GL": {
+    "name": "Greenland",
+    "population": 56865,
+    "hospital_capacity": 816,
+    "gdp": 3235809504
+  },
+  "GT": {
+    "name": "Guatemala",
+    "population": 18124838,
+    "hospital_capacity": 7974,
+    "gdp": 104450210572
+  },
+  "GF": {
+    "name": "French Guiana",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "GU": {
+    "name": "Guam",
+    "population": 166506,
+    "hospital_capacity": 416,
+    "gdp": 6910000000
+  },
+  "GY": {
+    "name": "Guyana",
+    "population": 826353,
+    "hospital_capacity": 2140,
+    "gdp": 17159509565
+  },
+  "HK": {
+    "name": "Hong Kong",
+    "population": 7536100,
+    "hospital_capacity": 36858,
+    "gdp": 380812234827
+  },
+  "HN": {
+    "name": "Honduras",
+    "population": 10644851,
+    "hospital_capacity": 7025,
+    "gdp": 34400509852
+  },
+  "HR": {
+    "name": "Croacia",
+    "population": 3859686,
+    "hospital_capacity": 21614,
+    "gdp": 84393795502
+  },
+  "HT": {
+    "name": "Haiti",
+    "population": 11637398,
+    "hospital_capacity": 55510,
+    "gdp": 19850829757
+  },
+  "HU": {
+    "name": "Hungría",
+    "population": 9592186,
+    "hospital_capacity": 65610,
+    "gdp": 212388906458
+  },
+  "ID": {
+    "name": "Indonesia",
+    "population": 281190067,
+    "hospital_capacity": 382418,
+    "gdp": 1371171152331
+  },
+  "IM": {
+    "name": "Isle of Man",
+    "population": 84165,
+    "hospital_capacity": 133,
+    "gdp": 7931193222
+  },
+  "IN": {
+    "name": "India",
+    "population": 1438069596,
+    "hospital_capacity": 2300911,
+    "gdp": 3567551674623
+  },
+  "IO": {
+    "name": "British Indian Ocean Territory",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "IE": {
+    "name": "Irlanda",
+    "population": 5307600,
+    "hospital_capacity": 15445,
+    "gdp": 551394889339
+  },
+  "IR": {
+    "name": "Irán",
+    "population": 90608707,
+    "hospital_capacity": 168532,
+    "gdp": 404625655204
+  },
+  "IQ": {
+    "name": "Irak",
+    "population": 45074049,
+    "hospital_capacity": 58596,
+    "gdp": 250842782139
+  },
+  "IS": {
+    "name": "Iceland",
+    "population": 393349,
+    "hospital_capacity": 1113,
+    "gdp": 31325116556
+  },
+  "IL": {
+    "name": "Israel",
+    "population": 9756600,
+    "hospital_capacity": 29855,
+    "gdp": 513611100815
+  },
+  "IT": {
+    "name": "Italia",
+    "population": 58993475,
+    "hospital_capacity": 187599,
+    "gdp": 2300941152991
+  },
+  "JM": {
+    "name": "Jamaica",
+    "population": 2839786,
+    "hospital_capacity": 4770,
+    "gdp": 19423355409
+  },
+  "JE": {
+    "name": "Jersey",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "JO": {
+    "name": "Jordan",
+    "population": 11439213,
+    "hospital_capacity": 15786,
+    "gdp": 50967475352
+  },
+  "JP": {
+    "name": "Japón",
+    "population": 124516650,
+    "hospital_capacity": 1583851,
+    "gdp": 4204494802431
+  },
+  "KZ": {
+    "name": "Kazajistán",
+    "population": 20330104,
+    "hospital_capacity": 136618,
+    "gdp": 262641892078
+  },
+  "KE": {
+    "name": "Kenia",
+    "population": 55339003,
+    "hospital_capacity": 73600,
+    "gdp": 108038588970
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "population": 7099750,
+    "hospital_capacity": 30031,
+    "gdp": 13987627908
+  },
+  "KH": {
+    "name": "Cambodia",
+    "population": 17423880,
+    "hospital_capacity": 12893,
+    "gdp": 42335646895
+  },
+  "KI": {
+    "name": "Kiribati",
+    "population": 132530,
+    "hospital_capacity": 246,
+    "gdp": 279208903
+  },
+  "KN": {
+    "name": "Saint Kitts and Nevis",
+    "population": 46758,
+    "hospital_capacity": 202,
+    "gdp": 1055499777
+  },
+  "KR": {
+    "name": "Corea del Sur",
+    "population": 51712619,
+    "hospital_capacity": 659335,
+    "gdp": 1712792854202
+  },
+  "KW": {
+    "name": "Kuwait",
+    "population": 4853420,
+    "hospital_capacity": 11405,
+    "gdp": 163704878875
+  },
+  "LA": {
+    "name": "Lao People's Democratic Republic",
+    "population": 7664993,
+    "hospital_capacity": 10041,
+    "gdp": 15843155731
+  },
+  "LB": {
+    "name": "Lebanon",
+    "population": 5773493,
+    "hospital_capacity": 15761,
+    "gdp": 20992421948
+  },
+  "LR": {
+    "name": "Liberia",
+    "population": 5493031,
+    "hospital_capacity": 8733,
+    "gdp": 4240000000
+  },
+  "LY": {
+    "name": "Libya",
+    "population": 7305659,
+    "hospital_capacity": 23378,
+    "gdp": 45096462972
+  },
+  "LC": {
+    "name": "Saint Lucia",
+    "population": 179285,
+    "hospital_capacity": 351,
+    "gdp": 2430148148
+  },
+  "LI": {
+    "name": "Liechtenstein",
+    "population": 39850,
+    "hospital_capacity": 99,
+    "gdp": 7361504432
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "population": 22037000,
+    "hospital_capacity": 88588,
+    "gdp": 84356863743
+  },
+  "LS": {
+    "name": "Lesotho",
+    "population": 2311472,
+    "hospital_capacity": 3004,
+    "gdp": 2117962450
+  },
+  "LT": {
+    "name": "Lithuania",
+    "population": 2871585,
+    "hospital_capacity": 17114,
+    "gdp": 79789877416
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "population": 666430,
+    "hospital_capacity": 2765,
+    "gdp": 85755006123
+  },
+  "LV": {
+    "name": "Latvia",
+    "population": 1877445,
+    "hospital_capacity": 9950,
+    "gdp": 42247850064
+  },
+  "MO": {
+    "name": "Macao",
+    "population": 678800,
+    "hospital_capacity": 3594,
+    "gdp": 45803067940
+  },
+  "MF": {
+    "name": "Saint Martin (French part)",
+    "population": 27515,
+    "hospital_capacity": 68,
+    "gdp": 649206262
+  },
+  "MA": {
+    "name": "Marruecos",
+    "population": 37712505,
+    "hospital_capacity": 27530,
+    "gdp": 144417103249
+  },
+  "MC": {
+    "name": "Monaco",
+    "population": 38956,
+    "hospital_capacity": 857,
+    "gdp": 9995350547
+  },
+  "MD": {
+    "name": "Moldova, Republic of",
+    "population": 2457783,
+    "hospital_capacity": 13911,
+    "gdp": 16539436547
+  },
+  "MG": {
+    "name": "Madagascar",
+    "population": 31195932,
+    "hospital_capacity": 9982,
+    "gdp": 15790113246
+  },
+  "MV": {
+    "name": "Maldives",
+    "population": 525994,
+    "hospital_capacity": 2651,
+    "gdp": 6590894301
+  },
+  "MX": {
+    "name": "México",
+    "population": 129739759,
+    "hospital_capacity": 132334,
+    "gdp": 1789114434843
+  },
+  "MH": {
+    "name": "Marshall Islands",
+    "population": 38827,
+    "hospital_capacity": 105,
+    "gdp": 259300000
+  },
+  "MK": {
+    "name": "North Macedonia",
+    "population": 1827816,
+    "hospital_capacity": 7713,
+    "gdp": 15763621848
+  },
+  "ML": {
+    "name": "Mali",
+    "population": 23769127,
+    "hospital_capacity": 5942,
+    "gdp": 20661794596
+  },
+  "MT": {
+    "name": "Malta",
+    "population": 552747,
+    "hospital_capacity": 2421,
+    "gdp": 22328640241
+  },
+  "MM": {
+    "name": "Myanmar",
+    "population": 54133798,
+    "hospital_capacity": 57381,
+    "gdp": 66757619000
+  },
+  "ME": {
+    "name": "Montenegro",
+    "population": 616177,
+    "hospital_capacity": 2347,
+    "gdp": 7530593375
+  },
+  "MN": {
+    "name": "Mongolia",
+    "population": 3481145,
+    "hospital_capacity": 36726,
+    "gdp": 20325121393
+  },
+  "MP": {
+    "name": "Northern Mariana Islands",
+    "population": 45143,
+    "hospital_capacity": 112,
+    "gdp": 1096000000
+  },
+  "MZ": {
+    "name": "Mozambique",
+    "population": 33635160,
+    "hospital_capacity": 24553,
+    "gdp": 20954220983
+  },
+  "MR": {
+    "name": "Mauritania",
+    "population": 5022441,
+    "hospital_capacity": 2008,
+    "gdp": 10651709411
+  },
+  "MS": {
+    "name": "Montserrat",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "MQ": {
+    "name": "Martinique",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "MU": {
+    "name": "Mauritius",
+    "population": 1261041,
+    "hospital_capacity": 4678,
+    "gdp": 1000000000
+  },
+  "MW": {
+    "name": "Malawi",
+    "population": 21104482,
+    "hospital_capacity": 27435,
+    "gdp": 12712150082
+  },
+  "MY": {
+    "name": "Malasia",
+    "population": 35126298,
+    "hospital_capacity": 70603,
+    "gdp": 399705169318
+  },
+  "YT": {
+    "name": "Mayotte",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "NA": {
+    "name": "Namibia",
+    "population": 2963095,
+    "hospital_capacity": 8000,
+    "gdp": 12351025066
+  },
+  "NC": {
+    "name": "New Caledonia",
+    "population": 289870,
+    "hospital_capacity": 724,
+    "gdp": 9623318718
+  },
+  "NE": {
+    "name": "Niger",
+    "population": 26159867,
+    "hospital_capacity": 7063,
+    "gdp": 16819170420
+  },
+  "NF": {
+    "name": "Norfolk Island",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "NG": {
+    "name": "Nigeria",
+    "population": 227882945,
+    "hospital_capacity": 113941,
+    "gdp": 363846332834
+  },
+  "NI": {
+    "name": "Nicaragua",
+    "population": 6823613,
+    "hospital_capacity": 6141,
+    "gdp": 17829218219
+  },
+  "NU": {
+    "name": "Niue",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "NL": {
+    "name": "Países Bajos",
+    "population": 17877117,
+    "hospital_capacity": 52022,
+    "gdp": 1154361305398
+  },
+  "NO": {
+    "name": "Noruega",
+    "population": 5519594,
+    "hospital_capacity": 18766,
+    "gdp": 485310823603
+  },
+  "NP": {
+    "name": "Nepal",
+    "population": 29694614,
+    "hospital_capacity": 11580,
+    "gdp": 40908073366
+  },
+  "NR": {
+    "name": "Nauru",
+    "population": 11875,
+    "hospital_capacity": 57,
+    "gdp": 154170289
+  },
+  "NZ": {
+    "name": "Nueva Zelanda",
+    "population": 5223100,
+    "hospital_capacity": 13893,
+    "gdp": 252175506110
+  },
+  "OM": {
+    "name": "Oman",
+    "population": 5049269,
+    "hospital_capacity": 5857,
+    "gdp": 108810923276
+  },
+  "PK": {
+    "name": "Pakistán",
+    "population": 247504495,
+    "hospital_capacity": 126227,
+    "gdp": 337912301397
+  },
+  "PA": {
+    "name": "Panama",
+    "population": 4458759,
+    "hospital_capacity": 8560,
+    "gdp": 83318176900
+  },
+  "PN": {
+    "name": "Pitcairn",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "PE": {
+    "name": "Perú",
+    "population": 33845617,
+    "hospital_capacity": 54152,
+    "gdp": 267603248655
+  },
+  "PH": {
+    "name": "Filipinas",
+    "population": 114891199,
+    "hospital_capacity": 110295,
+    "gdp": 437146372729
+  },
+  "PW": {
+    "name": "Palau",
+    "population": 17727,
+    "hospital_capacity": 76,
+    "gdp": 281849062
+  },
+  "PG": {
+    "name": "Papua New Guinea",
+    "population": 10389635,
+    "hospital_capacity": 1766,
+    "gdp": 30729242919
+  },
+  "PL": {
+    "name": "Polonia",
+    "population": 36687353,
+    "hospital_capacity": 224159,
+    "gdp": 809200697797
+  },
+  "PR": {
+    "name": "Puerto Rico",
+    "population": 3205691,
+    "hospital_capacity": 10642,
+    "gdp": 117902300000
+  },
+  "KP": {
+    "name": "Korea, Democratic People's Republic of",
+    "population": 26418204,
+    "hospital_capacity": 348720,
+    "gdp": 1000000000
+  },
+  "PT": {
+    "name": "Portugal",
+    "population": 10578174,
+    "hospital_capacity": 37340,
+    "gdp": 289114289663
+  },
+  "PY": {
+    "name": "Paraguay",
+    "population": 6844146,
+    "hospital_capacity": 6912,
+    "gdp": 42956263543
+  },
+  "PS": {
+    "name": "Palestine, State of",
+    "population": 5165775,
+    "hospital_capacity": 6198,
+    "gdp": 17420800000
+  },
+  "PF": {
+    "name": "French Polynesia",
+    "population": 281118,
+    "hospital_capacity": 702,
+    "gdp": 5814661208
+  },
+  "QA": {
+    "name": "Qatar",
+    "population": 2656032,
+    "hospital_capacity": 2974,
+    "gdp": 213002809330
+  },
+  "RE": {
+    "name": "Réunion",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "RO": {
+    "name": "Rumania",
+    "population": 19059479,
+    "hospital_capacity": 134559,
+    "gdp": 350775856415
+  },
+  "RU": {
+    "name": "Rusia",
+    "population": 143826130,
+    "hospital_capacity": 1011097,
+    "gdp": 2021421476035
+  },
+  "RW": {
+    "name": "Rwanda",
+    "population": 13954471,
+    "hospital_capacity": 10326,
+    "gdp": 14097768472
+  },
+  "SA": {
+    "name": "Arabia Saudita",
+    "population": 33264292,
+    "hospital_capacity": 71518,
+    "gdp": 1067582933333
+  },
+  "SD": {
+    "name": "Sudan",
+    "population": 50042791,
+    "hospital_capacity": 33028,
+    "gdp": 109265503110
+  },
+  "SN": {
+    "name": "Senegal",
+    "population": 18077573,
+    "hospital_capacity": 13196,
+    "gdp": 30848333083
+  },
+  "SG": {
+    "name": "Singapur",
+    "population": 5917648,
+    "hospital_capacity": 15681,
+    "gdp": 501427500080
+  },
+  "SH": {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "SJ": {
+    "name": "Svalbard and Jan Mayen",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "SB": {
+    "name": "Solomon Islands",
+    "population": 800005,
+    "hospital_capacity": 1120,
+    "gdp": 1633319401
+  },
+  "SL": {
+    "name": "Sierra Leone",
+    "population": 8460512,
+    "hospital_capacity": 3384,
+    "gdp": 6411869546
+  },
+  "SV": {
+    "name": "El Salvador",
+    "population": 6309624,
+    "hospital_capacity": 7319,
+    "gdp": 34015620000
+  },
+  "SM": {
+    "name": "San Marino",
+    "population": 33860,
+    "hospital_capacity": 114,
+    "gdp": 1831700577
+  },
+  "SO": {
+    "name": "Somalia",
+    "population": 18358615,
+    "hospital_capacity": 15971,
+    "gdp": 10968517090
+  },
+  "PM": {
+    "name": "Saint Pierre and Miquelon",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "RS": {
+    "name": "Serbia",
+    "population": 6623183,
+    "hospital_capacity": 35434,
+    "gdp": 81342660752
+  },
+  "SS": {
+    "name": "South Sudan",
+    "population": 11483374,
+    "hospital_capacity": 28708,
+    "gdp": 11997800760
+  },
+  "ST": {
+    "name": "Sao Tome and Principe",
+    "population": 230871,
+    "hospital_capacity": 667,
+    "gdp": 678976264
+  },
+  "SR": {
+    "name": "Suriname",
+    "population": 628886,
+    "hospital_capacity": 1817,
+    "gdp": 3455146280
+  },
+  "SK": {
+    "name": "Eslovaquia",
+    "population": 5426740,
+    "hospital_capacity": 30823,
+    "gdp": 132908336234
+  },
+  "SI": {
+    "name": "Slovenia",
+    "population": 2120461,
+    "hospital_capacity": 9011,
+    "gdp": 69148468417
+  },
+  "SE": {
+    "name": "Suecia",
+    "population": 10536632,
+    "hospital_capacity": 21600,
+    "gdp": 584960475767
+  },
+  "SZ": {
+    "name": "Eswatini",
+    "population": 1230506,
+    "hospital_capacity": 2510,
+    "gdp": 4442875788
+  },
+  "SX": {
+    "name": "Sint Maarten (Dutch part)",
+    "population": 42749,
+    "hospital_capacity": 106,
+    "gdp": 1627776949
+  },
+  "SC": {
+    "name": "Seychelles",
+    "population": 119773,
+    "hospital_capacity": 382,
+    "gdp": 2141450171
+  },
+  "SY": {
+    "name": "Syrian Arab Republic",
+    "population": 23594623,
+    "hospital_capacity": 33740,
+    "gdp": 23622827079
+  },
+  "TC": {
+    "name": "Turks and Caicos Islands",
+    "population": 46198,
+    "hospital_capacity": 115,
+    "gdp": 1402054390
+  },
+  "TD": {
+    "name": "Chad",
+    "population": 19319064,
+    "hospital_capacity": 8693,
+    "gdp": 13149325362
+  },
+  "TG": {
+    "name": "Togo",
+    "population": 9304337,
+    "hospital_capacity": 5396,
+    "gdp": 9171261837
+  },
+  "TH": {
+    "name": "Tailandia",
+    "population": 71702435,
+    "hospital_capacity": 167783,
+    "gdp": 514968699239
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "population": 10389799,
+    "hospital_capacity": 44883,
+    "gdp": 12060602008
+  },
+  "TK": {
+    "name": "Tokelau",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "population": 7364438,
+    "hospital_capacity": 29678,
+    "gdp": 60628857142
+  },
+  "TL": {
+    "name": "Timor-Leste",
+    "population": 1384286,
+    "hospital_capacity": 8167,
+    "gdp": 2079916900
+  },
+  "TO": {
+    "name": "Tonga",
+    "population": 104597,
+    "hospital_capacity": 259,
+    "gdp": 518180042
+  },
+  "TT": {
+    "name": "Trinidad and Tobago",
+    "population": 1367510,
+    "hospital_capacity": 2201,
+    "gdp": 27372285697
+  },
+  "TN": {
+    "name": "Tunisia",
+    "population": 12200431,
+    "hospital_capacity": 29525,
+    "gdp": 48529595416
+  },
+  "TR": {
+    "name": "Turquía",
+    "population": 85325965,
+    "hospital_capacity": 255124,
+    "gdp": 1118252964260
+  },
+  "TV": {
+    "name": "Tuvalu",
+    "population": 9816,
+    "hospital_capacity": 40,
+    "gdp": 62280311
+  },
+  "TW": {
+    "name": "Taiwan, Province of China",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "TZ": {
+    "name": "Tanzania, United Republic of",
+    "population": 66617606,
+    "hospital_capacity": 41969,
+    "gdp": 79062403820
+  },
+  "UG": {
+    "name": "Uganda",
+    "population": 48656601,
+    "hospital_capacity": 24328,
+    "gdp": 48768955863
+  },
+  "UA": {
+    "name": "Ucrania",
+    "population": 37732836,
+    "hospital_capacity": 236207,
+    "gdp": 178757021965
+  },
+  "UM": {
+    "name": "United States Minor Outlying Islands",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "UY": {
+    "name": "Uruguay",
+    "population": 3388081,
+    "hospital_capacity": 8402,
+    "gdp": 77240830877
+  },
+  "US": {
+    "name": "Estados Unidos",
+    "population": 334914895,
+    "hospital_capacity": 917666,
+    "gdp": 27720709000000
+  },
+  "UZ": {
+    "name": "Uzbekistán",
+    "population": 35652307,
+    "hospital_capacity": 173270,
+    "gdp": 101591769702
+  },
+  "VA": {
+    "name": "Holy See (Vatican City State)",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "VC": {
+    "name": "Saint Vincent and the Grenadines",
+    "population": 101323,
+    "hospital_capacity": 425,
+    "gdp": 1065962962
+  },
+  "VE": {
+    "name": "Venezuela",
+    "population": 28300854,
+    "hospital_capacity": 28017,
+    "gdp": 482359318767
+  },
+  "VG": {
+    "name": "Virgin Islands, British",
+    "population": 38985,
+    "hospital_capacity": 97,
+    "gdp": 1000000000
+  },
+  "VI": {
+    "name": "Virgin Islands, U.S.",
+    "population": 104917,
+    "hospital_capacity": 1959,
+    "gdp": 4672000000
+  },
+  "VN": {
+    "name": "Vietnam",
+    "population": 100352192,
+    "hospital_capacity": 255898,
+    "gdp": 429716969043
+  },
+  "VU": {
+    "name": "Vanuatu",
+    "population": 320409,
+    "hospital_capacity": 538,
+    "gdp": 1126313359
+  },
+  "WF": {
+    "name": "Wallis and Futuna",
+    "population": 100000,
+    "hospital_capacity": 250,
+    "gdp": 1000000000
+  },
+  "WS": {
+    "name": "Samoa",
+    "population": 216663,
+    "hospital_capacity": 216,
+    "gdp": 938189443
+  },
+  "YE": {
+    "name": "Yemen",
+    "population": 39390799,
+    "hospital_capacity": 27967,
+    "gdp": 21606160783
+  },
+  "ZA": {
+    "name": "Sudáfrica",
+    "population": 63212384,
+    "hospital_capacity": 144124,
+    "gdp": 380699271814
+  },
+  "ZM": {
+    "name": "Zambia",
+    "population": 20723965,
+    "hospital_capacity": 41447,
+    "gdp": 27577956471
+  },
+  "ZW": {
+    "name": "Zimbabwe",
+    "population": 16340822,
+    "hospital_capacity": 32681,
+    "gdp": 35231367885
+  }
+}

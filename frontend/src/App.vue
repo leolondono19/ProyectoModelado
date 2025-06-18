@@ -14,7 +14,7 @@
       </div>
 
       <div class="input-group">
-        <label>Duración (ticks):</label>
+        <label>Duración (Dias):</label>
         <input type="number" v-model.number="duration" />
       </div>
 
@@ -33,49 +33,58 @@
       </div>
 
       <div class="tick-info">
-        <strong>Tick actual: {{ tick }}</strong>
+        <strong>Dia actual: {{ tick }}</strong>
       </div>
     </div>
 
     <MapView :population="population" />
 
     <!-- Tabla de resultados extendida -->
-    <div v-if="!running && report.length > 0" class="report-table">
-      <h2>📊 Reporte Final por País</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>País</th>
-            <th>Contagiados</th>
-            <th>Muertes</th>
-            <th>Vacunados</th>
-            <th>Centros Médicos</th>
-            <th>Incidencia</th>
-            <th>Recuperados</th>
-            <th>Casos Graves</th>
-            <th>Capacidad Hospitalaria</th>
-            <th>Tasa de Vacunación</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="fila in report" :key="fila.pais">
-            <td>{{ fila.pais }}</td>
-            <td>{{ fila.contagiados }}</td>
-            <td>{{ fila.muertes }}</td>
-            <td>{{ fila.vacunados }}</td>
-            <td>{{ fila.centros_medicos }}</td>
-            <td>{{ fila.incidencia }}</td>
-            <td>{{ fila.recuperados }}</td>
-            <td>{{ fila.graves }}</td>
-            <td>{{ fila.capacidad_hospitalaria }}</td>
-            <td>{{ fila.tasa_vacunacion }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div v-if="!running && report.length > 0" class="report-table-container">
+  <h2>📊 Reporte Final por País</h2>
+  
+  <!-- 🔵 Botón de Descargar CSV -->
+  <button @click="downloadCSV" class="download-btn">Descargar CSV</button>
+
+  <table class="report-table">
+    <thead>
+      <tr>
+        <th>País</th>
+        <th>Contagiados</th>
+        <th>Muertes</th>
+        <th>Vacunados</th>
+        <th>Centros Médicos</th>
+        <th>Incidencia</th>
+        <th>Recuperados</th>
+        <th>Casos Graves</th>
+        <th>Capacidad Hospitalaria</th>
+        <th>Tasa de Vacunación</th>
+        <th>Población</th>
+        <th>PIB</th>
+        <th>Nivel Económico</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="fila in report" :key="fila.pais">
+        <td>{{ fila.pais }}</td>
+        <td>{{ fila.contagiados }}</td>
+        <td>{{ fila.muertes }}</td>
+        <td>{{ fila.vacunados }}</td>
+        <td>{{ fila.centros_medicos }}</td>
+        <td>{{ fila.incidencia }}</td>
+        <td>{{ fila.recuperados }}</td>
+        <td>{{ fila.graves }}</td>
+        <td>{{ fila.capacidad_hospitalaria }}</td>
+        <td>{{ fila.tasa_vacunacion }}</td>
+        <td>{{ fila.poblacion }}</td>
+        <td>{{ fila.pib }}</td>
+        <td>{{ fila.nivel_economico }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
   </div>
 </template>
-
 
 <script setup>
 import { ref } from 'vue';
@@ -95,26 +104,30 @@ const report = ref([]);
 let intervalId = null;
 let stopRequested = false;
 
-// 🟦 Función para obtener el reporte final
+// Función para obtener el reporte final
 const generateReport = async () => {
   try {
     const res = await axios.get("http://127.0.0.1:8000/report");
     report.value = Object.entries(res.data).map(([pais, datos]) => ({
-  pais,
-  contagiados: datos.contagiados,
-  muertes: datos.muertes,
-  vacunados: datos.vacunados,
-  centros_medicos: datos.centros_medicos,
-  incidencia: datos.incidencia,
-  recuperados: datos.recuperados,
-  graves: datos.graves,
-  capacidad_hospitalaria: datos.capacidad_hospitalaria,
-  tasa_vacunacion: datos.tasa_vacunacion
-}));
+      pais,
+      contagiados: datos.infectados, // <-- ojo con este campo (antes decía 'contagiados' en lugar de 'infectados')
+      muertes: datos.muertes,
+      vacunados: datos.vacunados,
+      centros_medicos: datos.centros_medicos,
+      incidencia: datos.incidencia,
+      recuperados: datos.recuperados,
+      graves: datos.graves,
+      capacidad_hospitalaria: datos.capacidad_hospitalaria,
+      tasa_vacunacion: datos.tasa_vacunacion,
+      poblacion: datos.poblacion,
+      pib: datos.pib,
+      nivel_economico: datos.nivel_economico // nuevo
+    }));
   } catch (error) {
     console.error("Error al obtener el reporte:", error);
   }
 };
+
 
 const startSimulation = async () => {
   try {
@@ -134,14 +147,12 @@ const startSimulation = async () => {
       for (let i = 0; i < duration.value; i++) {
         if (stopRequested) break;
         await nextTick();
-        if (!running.value) break; // se detuvo sola
       }
       instantRunning.value = false;
 
-      // Si terminó automáticamente, genera reporte
-      if (!running.value && !stopRequested) {
-        await generateReport();
-      }
+      // 🔵 Siempre generar reporte
+      await generateReport();
+      running.value = false; // Asegura mostrar la tabla
     } else {
       autoRunning.value = true;
       intervalId = setInterval(async () => {
@@ -160,6 +171,7 @@ const startSimulation = async () => {
     console.error(error);
   }
 };
+
 
 const nextTick = async () => {
   if (!running.value) return;
@@ -187,19 +199,93 @@ const stopSimulation = (manual = true) => {
 
   // Generar reporte solo si fue detenido manualmente
   if (manual && report.value.length === 0) {
-  generateReport();
-}
+    generateReport();
+  }
 };
+
+const downloadCSV = () => {
+  if (!report.value.length) return;
+
+  const headers = [
+    "País", "Contagiados", "Muertes", "Vacunados", "Centros Médicos", 
+    "Incidencia", "Recuperados", "Casos Graves", 
+    "Capacidad Hospitalaria", "Tasa de Vacunación", 
+    "Población", "PIB", "Nivel Económico"
+  ];
+
+  const rows = report.value.map(fila => [
+    fila.pais,
+    fila.contagiados,
+    fila.muertes,
+    fila.vacunados,
+    fila.centros_medicos,
+    fila.incidencia,
+    fila.recuperados,
+    fila.graves,
+    fila.capacidad_hospitalaria,
+    fila.tasa_vacunacion,
+    fila.poblacion,
+    fila.pib,
+    fila.nivel_economico
+  ]);
+
+  let csvContent = "data:text/csv;charset=utf-8," 
+    + headers.join(",") + "\n"
+    + rows.map(e => e.join(",")).join("\n");
+
+  const encodedUri = encodeURI(csvContent);
+  const link = document.createElement("a");
+  link.setAttribute("href", encodedUri);
+  link.setAttribute("download", "reporte_final.csv");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
 </script>
 
-
 <style scoped>
+.report-table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  margin: 20px auto; /* Centrada */
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #ccc;
+  max-width: 100%;
+}
+
+.report-table table {
+  width: 100%;
+  min-width: 1000px; /* fuerza espacio para todas las columnas */
+  margin: 0 auto;
+}
+
+.report-table th,
+.report-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.report-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.report-table-container {
+  overflow-x: auto; /* Scroll horizontal solo si es necesario */
+  max-width: 100%;
+  margin: 0 auto; /* centrado */
+}
+
 .app-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f5f7fa;
+  background: #b9b9c7;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -302,4 +388,20 @@ h1 {
   background-color: #3498db;
   color: white;
 }
+
+.download-btn {
+  background-color: #2980b9;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.download-btn:hover {
+  background-color: #1c5d8c;
+}
+
 </style>

@@ -1,11 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import Optional
 import random
 import geopandas as gpd
 from shapely.geometry import Point
 import reverse_geocoder as rg
+import os
+import json
 from collections import defaultdict
 
 app = FastAPI()
@@ -14,8 +17,6 @@ app = FastAPI()
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
 ]
 
 app.add_middleware(
@@ -133,6 +134,11 @@ def get_simulation_data():
         for p in simulation_state["population"]
     ]
 
+# Cargar JSON countries_data solo 1 vez al iniciar la app para eficiencia
+DATA_PATH = os.path.join("data", "countries_data.json")
+with open(DATA_PATH, "r", encoding="utf-8") as f:
+    countries_data = json.load(f)
+
 @app.get("/report")
 def get_country_report():
     report = defaultdict(lambda: {
@@ -141,20 +147,61 @@ def get_country_report():
         "vacunados": 0,
         "centros_medicos": 0,
         "incidencia": 0,
+        "recuperados": 0,
+        "graves": 0,
+        "capacidad_hospitalaria": 0,
+        "tasa_vacunacion": 0,
         "total": 0,
     })
 
     for person in simulation_state["population"]:
-        country = person.get("country", "Unknown")
-        report[country]["total"] += 1
+        code = person.get("country", "Unknown")
+        report[code]["total"] += 1
         if person["state"] == "I":
-            report[country]["infectados"] += 1
+            report[code]["infectados"] += 1
         if person["state"] == "R" and random.random() < 0.1:
-            report[country]["muertes"] += 1
+            report[code]["muertes"] += 1
 
-    for data in report.values():
+    for code, data in report.items():
         data["vacunados"] = random.randint(0, data["total"])
         data["centros_medicos"] = random.randint(0, 20)
         data["incidencia"] = round((data["infectados"] / data["total"]) * 100, 2) if data["total"] > 0 else 0
+        data["recuperados"] = random.randint(0, data["total"])
+        data["graves"] = random.randint(0, data["total"] // 10)
+        if code in countries_data:
+            country_info = countries_data[code]
+            data["capacidad_hospitalaria"] = country_info.get("hospital_capacity", 0)
+            data["tasa_vacunacion"] = round(random.uniform(0, 1), 2)
+            data["poblacion"] = country_info.get("population", 0)
+            data["pib"] = country_info.get("gdp", 0)
 
-    return dict(report)
+            # Calcular PIB per cápita para clasificación
+            pib_per_capita = data["pib"] / data["poblacion"] if data["poblacion"] > 0 else 0
+
+            # Clasificación socioeconómica sencilla
+            if pib_per_capita < 1000:
+                data["nivel_economico"] = "Pobre"
+            elif pib_per_capita < 15000:
+                data["nivel_economico"] = "Medio"
+            else:
+                data["nivel_economico"] = "Rico"
+        else:
+            data["capacidad_hospitalaria"] = 0
+            data["tasa_vacunacion"] = 0
+            data["poblacion"] = 0
+            data["pib"] = 0
+            data["nivel_economico"] = "Desconocido"
+
+    # Crear nuevo dict con nombre completo en lugar de código
+    named_report = {}
+    for code, data in report.items():
+        nombre = countries_data.get(code, {}).get("name", code)
+        named_report[nombre] = data
+
+    return named_report
+
+
+# Endpoint para servir countries_data.json (opcional)
+@app.get("/countries-data")
+def get_countries_data():
+    return JSONResponse(content=countries_data)
