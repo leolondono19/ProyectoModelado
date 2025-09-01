@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <h1>🦠 Simulación de Epidemia Global</h1>
+    <h1>🦠 Simulación de Pandemia Global</h1>
 
     <div class="control-panel">
       <div class="input-group">
